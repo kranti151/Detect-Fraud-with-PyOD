@@ -10,48 +10,6 @@ https://www.kaggle.com/mlg-ulb/creditcardfraud
 
 The dataset contains anonymized features (V1, V2, ..., V28), a Time feature, Amount, and a Class label (0 = normal, 1 = fraud).
 
-Due to the high imbalance (frauds are very rare), unsupervised learning techniques like AutoEncoders are well suited.
-
-Features
-Data preprocessing including feature scaling with StandardScaler.
-
-Splitting the data into training (normal transactions only) and test sets.
-
-Training an AutoEncoder model to reconstruct normal transaction patterns.
-
-Detecting anomalies by computing reconstruction errors (outlier scores).
-
-Dynamic threshold selection via ROC curve analysis (Youden's J statistic).
-
-Performance evaluation using precision, recall, F1-score, and AUC-ROC.
-
-Visualization of reconstruction error distributions for normal and fraudulent transactions.
-
-Install dependencies
-
-The main dependencies include:
-
-Python 3.8+
-
-numpy
-
-pandas
-
-scikit-learn
-
-matplotlib
-
-pyod
-
-Download the Kaggle Credit Card Fraud dataset
-
-Place creditcard.csv in the project root directory.
-
-Usage
-Run the main Python script:
-
-python fraud_detection_autoencoder.py
-
 This will:
 
 Load and preprocess the data
