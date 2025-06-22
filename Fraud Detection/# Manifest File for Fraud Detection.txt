@@ -1,0 +1,39 @@
+# Manifest File for Fraud Detection using AutoEncoder with PyOD
+# Author: (Komalben Suthar)
+# Date: 2025-06-22
+
+# Project Files:
+fraud_detection_autoencoder.py      # Main Python script containing data loading, preprocessing, model training, evaluation, and visualization
+requirements.txt                    # List of Python dependencies to install via pip
+creditcard.csv                     # Kaggle Credit Card Fraud Detection dataset 
+
+# Python Environment:
+Python version: 3.8 or higher
+
+# Dependencies (can be installed using 'pip install -r requirements.txt'):
+- numpy
+- pandas
+- scikit-learn
+- matplotlib
+- seaborn
+- pyod
+
+# How to run:
+1. Download 'creditcard.csv' dataset from Kaggle (https://www.kaggle.com/mlg-ulb/creditcardfraud)
+2. Place 'creditcard.csv' in the project root directory
+3. Install dependencies:
+     pip install -r requirements.txt
+4. Run the main script:
+     python fraud_detection_autoencoder.py
+
+# Output:
+- Classification report with precision, recall, F1-score
+- AUC-ROC score
+- Plots of anomaly scores with thresholds
+- Scatter plot of transactions colored by anomaly scores
+
+# Notes:
+- The AutoEncoder model uses unsupervised learning to detect anomalies.
+- Threshold for anomaly detection is automatically set based on training data.
+- Visualizations aid understanding model behavior and anomaly detection quality.
+
