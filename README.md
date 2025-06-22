@@ -71,15 +71,6 @@ The classification report shows precision, recall, and F1-score, which are cruci
 
 Visualization helps interpret the separation between normal and fraud in reconstruction errors.
 
-Project Structure
-fraud-detection-autoencoder/
-│
-├── fraud_detection_autoencoder.py  # Main Python script with model training and evaluation
-├── creditcard.csv                  # Kaggle dataset file (not included in repo)
-├── README.md                      # This file
-
-
-
 References
 PyOD Library Documentation
 Credit Card Fraud Detection Dataset on Kaggle
